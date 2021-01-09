@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  go-server:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./docs:/go/docs
+    environment:
+      - PORT=80
